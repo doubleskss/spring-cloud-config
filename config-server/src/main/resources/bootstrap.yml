@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///Users/amore/doubles/resource
+          search-paths: file
+#아래 내역이 살아있으면 CustomTextEncryptor를 지정하더라도 아래 인증서를 통한 암복호화가 진행
+#encrypt:
+#  key-store:
+#    location: classpath:/doubles.jks
+#    password: doubles12345
+#    alias: doubles
+#    secret: doubles12345

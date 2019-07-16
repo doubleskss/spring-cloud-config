@@ -1,0 +1,11 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      profile: default
+      uri: http://localhost:8888
+management:
+  endpoint:
+    refresh:
+      enabled: true
