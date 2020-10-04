@@ -19,6 +19,7 @@ public class JasyptConfig {
     /**
      * 설정 빈
      * @return
+     * yml안에 암호화된 문구를 적용함. ex) ENC(q5Ns7GcOKHyq3stLMzyvjZWZZn0Ny3bM)
      */
     @Bean("jasyptStringEncryptor")
     public StringEncryptor stringEncryptor() {
